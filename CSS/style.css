@@ -1,0 +1,384 @@
+:root {
+    --blanco:#ffffff;
+    --negro:#000000;
+    --turquesa: #1bc0c2 ;
+    --magenta: #ff0097;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+html {
+    font-size: 62.5%;
+    
+}
+body {
+    font-size: 62.5%;
+}
+
+
+
+                                    /**---LOGO---**/
+
+.logo {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;     
+    padding: 1rem; 
+    margin-top: 4rem;    
+    margin-bottom: 3rem;
+}
+
+
+
+                                    /*---BARRA DE NAVEGACION---*/
+
+.navegacion {
+    background-color: var(--negro);
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+@media (max-width: 480px) { 
+    .navegacion-principal {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+
+.navegacion-principal a {
+    padding: 1rem;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+@media (max-width: 480px) { 
+    .navegacion-principal a {
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+
+
+.navegacion-principal a:hover {
+    background-color: var(--turquesa);
+    color: var(--negro);
+}
+
+
+
+                                    /*---BACKGROUND Y PRESENTACION---*/
+
+.principal {
+    background-image: url('../images/setfilm.jpg');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contenido-principal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco); 
+    background-color: rgba( 0,0,0, .7);
+   
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem; 
+}
+
+
+                                    /*---SECCION NOSOTROS---*/
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nosotros_hijo {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+    
+}
+
+@media (max-width: 900px) {
+    .nosotros_hijo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nosotros_titulo {
+ display: flex;
+ flex-direction: column;
+ padding: 1.5rem;
+ 
+}
+
+.nosotros_titulo h3 {
+text-align: left;
+padding: 1rem;   
+}
+
+.nosotros_titulo h4 {
+    padding: 1rem;
+}
+
+.nosotros_titulo p {
+    padding: 1rem;
+}
+
+.sp {
+    color: var(--turquesa);
+    font-weight: 400;
+}
+
+.titulos_secciones {
+    padding: 2rem;
+}
+
+.imagen {
+    width: 600px;
+    height: 300px;
+    padding: 1.5rem;
+}
+
+
+                                        /*---SERVICIOS---*/
+
+.servicios_padre span {
+ color: var(--magenta);
+ font-weight: 200;  
+}
+
+
+
+.servicio_titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--magenta);
+}
+
+.servicios_hijo {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+@media (max-width: 800px) { 
+    .servicios_hijo {
+        flex-direction: column;
+        
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.servicio p {
+    text-align: center;
+}
+
+.iconos {
+    padding-right: 1rem;
+}
+
+.cine svg:hover {
+   transform: rotate(45deg);
+    
+}
+
+.screen svg:hover {
+    transform: perspective(100px) rotateY(50deg);
+}
+
+.camera svg:hover {
+    transform: scale(1.2);
+}
+
+                                        /*-----FUENTES-----*/
+h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
+
+
+                                        /*----FORMULARIO-----*/
+
+.contenido_formulario {
+    background-color: var(--negro);
+}
+
+.contenido_formulario h3 {
+    color: var(--blanco);
+    padding: 2rem;
+}
+
+.formulario {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: min( 60rem, 100%);
+    background-color: var(--negro);
+    padding: 1rem;
+}
+
+.formulario fieldset {
+   border: none;
+}
+
+.formulario legend {
+   text-align: center;
+   font-family: "poppins", sans-serif;
+   font-size: 2rem;
+   padding-bottom: 1rem;
+   color: var(--blanco);
+}
+
+.contenedor_campos {
+    display: flex;
+    flex-direction: column;
+}
+
+.campos {
+ display: flex;
+ flex-direction: column;
+ padding-bottom: 1rem;
+
+}
+
+.campos label {
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    padding-bottom: 1rem;
+}
+
+.campos textarea {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.input-text {
+    border: none;
+    border-radius: .5rem;
+    padding: 1.2rem;
+    width: 100%;
+    
+}
+
+.boton {
+    text-decoration: none;
+    border: none;
+    padding: 1rem 2rem;
+    width: auto;
+    text-transform: uppercase;
+    font-family: "oswald", sans-serif ;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--turquesa);
+}
+
+
+@media (max-width: 800px) {
+   .boton {
+    width: 100%;
+   }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex :hover {
+    transform: scale(2rem);
+}
+
+                                        /*-----FOOTER-----*/
+
+.redes_sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--negro);
+    padding: 2rem;
+}
+
+.redes_sociales p {
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+
+.iconos_footer {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.icono_footer {
+    padding: 0.3rem 1rem
+}
+
+.derechos {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.derechos p {
+    font-size: 1.4rem;
+}
+
